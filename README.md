@@ -34,6 +34,15 @@ sudo make install
 
 ```
 
+Once you ahve built googletest, you can run cmake in this folder to create the app and test executables.
 
+```
+cd googletest-mva
+mkdir build
+cmake ..
+cd build
+make
+./square_root_app
+./square_root_tests
 
-
+```
