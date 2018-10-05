@@ -28,10 +28,9 @@ git clone https://github.com/google/googletest
 cd googletest
 mkdir build
 cd build
-sudo cmake ..
-sudo make
-sudo make install
-
+cmake ..
+make
+make install
 ```
 
 Once you ahve built googletest, you can run cmake in this folder to create the app and test executables.
