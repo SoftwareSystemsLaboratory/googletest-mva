@@ -1,5 +1,8 @@
 cmake_minimum_required(VERSION 2.6)
  
+#https://stackoverflow.com/questions/6594796/how-do-i-make-cmake-output-into-a-bin-dir
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+
 # Locate GTest
 find_package(GTest REQUIRED)
 include_directories(${GTEST_INCLUDE_DIRS})

@@ -63,5 +63,4 @@ Mkfile.old
 dkms.conf
 
 # Targets to ignore
-square_root_tests
-square_root_app
+bin/
