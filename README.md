@@ -3,6 +3,9 @@
 This is a minimal example to show how to create an app with actual unit tests.
 This is built on CMake, which seems to be the preferred way to work with Google Test.
 
+This example is inspired by https://www.ibm.com/developerworks/aix/library/au-googletestingframework.html.
+
+
 # Prerequisites
 
 
@@ -41,7 +44,33 @@ mkdir build
 cmake ..
 cd build
 make
-./square_root_app
-./square_root_tests
+
+```
+
+Running the app from the build directory:
+
+```
+./bin/square_root_app
+sqrt(2) = 1.41421
+
+```
+
+Running the tests from the build directory:
+
+```
+./bin/square_root_tests
+
+[==========] Running 2 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 2 tests from SquareRootTest
+[ RUN      ] SquareRootTest.PositiveNos
+[       OK ] SquareRootTest.PositiveNos (0 ms)
+[ RUN      ] SquareRootTest.NegativeNos
+[       OK ] SquareRootTest.NegativeNos (0 ms)
+[----------] 2 tests from SquareRootTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 2 tests from 1 test case ran. (0 ms total)
+[  PASSED  ] 2 tests.
 
 ```
