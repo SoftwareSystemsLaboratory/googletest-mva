@@ -6,7 +6,7 @@ addons:
         - cmake
 
 before_script:
-    - pushd $TRAVIS_BUILD_DIR && git clone https://github.com/google/googletest && mkdir build && cd build && cmake .. && sudo make install && popd
+    - pushd $TRAVIS_BUILD_DIR && git clone https://github.com/google/googletest && mkdir -p googletest/build && cd googletest/build && cmake .. && sudo make install && cd - && popd
 
 script:
   - cmake .
