@@ -6,7 +6,9 @@ addons:
         - cmake
 
 before_script:
-    - pushd $TRAVIS_BUILD_DIR && git clone https://github.com/google/googletest && mkdir -p googletest/build && pushd googletest/build && cmake ..  && sudo make install && popd && popd
+    - cp scripts/install-googletest.sh $TRAVIS_BUILD_DIR
+    - chmod +x $TRAVIS_BUILD_DIR/install-googletest.sh
+    - pushd $TRAVIS_BUILD_DIR && ./install-googletest.sh && popd
 
 script:
   - cmake .
