@@ -5,6 +5,9 @@ This is built on CMake, which seems to be the preferred way to work with Google 
 
 This example is inspired by https://www.ibm.com/developerworks/aix/library/au-googletestingframework.html.
 
+# Build Status
+
+[![Build Status](https://travis-ci.org/gkthiruvathukal/googletest-mva.svg?branch=master)](https://travis-ci.org/gkthiruvathukal/googletest-mva)
 
 # Prerequisites
 
