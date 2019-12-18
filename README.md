@@ -1,16 +1,24 @@
 # Google Test Minimal Example
 
-This is a minimal example to show how to create an app with actual unit tests.
+This is a minimal example to show how to create an C/C++ app with unit tests (via GoogleTest).
 This is built on CMake, which seems to be the preferred way to work with Google Test.
 
-This example is inspired by https://www.ibm.com/developerworks/aix/library/au-googletestingframework.html.
+It's also a preferred way to learn about automatic compilation, especially for students, since writing Makefiles can be time-consuming, especially when trying to make them work on multiple platforms.
 
-# Build Status
+This example is inspired by https://www.ibm.com/developerworks/aix/library/au-googletestingframework.html with the following additions:
+
+- Demonstration of how to use CMake
+- Demonstration of how to run the code in a simple Docker (see src/Dockerfile).
+- Demonstration of continuous integration using Travis, which shows how to run the unit tests.
+
+# Build Status (on Travis)
 
 [![Build Status](https://travis-ci.org/gkthiruvathukal/googletest-mva.svg?branch=master)](https://travis-ci.org/gkthiruvathukal/googletest-mva)
 
 # Prerequisites
 
+The main prerequisite is to set up GoogleTest.
+I've only tested on Linux and OS X via HomeBrew.
 
 ## Linux instructions
 
@@ -39,10 +47,10 @@ make
 make install
 ```
 
-Once you ahve built googletest, you can run cmake in this folder to create the app and test executables.
+# Running the minimum viable application...
 
 ```
-cd googletest-mva
+cd src
 mkdir build
 cmake ..
 cd build
