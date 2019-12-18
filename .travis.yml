@@ -1,0 +1,15 @@
+language: c
+addons:
+    apt:
+        packages:
+        - build-essential
+        - cmake
+
+before_script:
+    - pushd $TRAVIS_BUILD_DIR && git clone https://github.com/google/googletest && mkdir build && cd build && cmake .. && sudo make install && popd
+
+script:
+  - cmake .
+  - make
+  - ./bin/square_root_tests
+
