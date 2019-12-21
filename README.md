@@ -52,8 +52,8 @@ make install
 ```
 cd src
 mkdir build
-cmake ..
 cd build
+cmake ..
 make
 
 ```
