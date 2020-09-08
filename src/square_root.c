@@ -3,7 +3,7 @@
 #include <math.h>
 
 #include "square_root.h"
- 
+
 double square_root(const double a) {
     double b = sqrt(a);
     if(b != b) { // nan check

@@ -8,8 +8,8 @@
 
 #include "countbits.h"
 
-int count_bits(unsigned long n) 
-{ 
+int count_bits(unsigned long n)
+{
     int number_set=0;
     unsigned long number = n;
     while (number > 0) {
