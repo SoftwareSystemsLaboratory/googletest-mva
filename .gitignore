@@ -8,6 +8,10 @@ install_manifest.txt
 compile_commands.json
 CTestTestfile.cmake
 
+# Backups
+*~
+*.orig
+*.swp
 
 # Prerequisites
 *.d
@@ -64,3 +68,4 @@ dkms.conf
 
 # Targets to ignore
 bin/
+lib/

@@ -2,7 +2,7 @@
 
 #include <gtest/gtest.h>
 
-#include "square_root.h"
+#include "square_root.hh"
  
 TEST(SquareRootTest, PositiveNos) { 
     ASSERT_EQ(6, square_root(36.0));
