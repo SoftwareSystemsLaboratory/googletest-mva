@@ -5,10 +5,11 @@
 
 #ifdef __cplusplus
 extern "C" {
-#endif
+#include "square_root.h"
+}
+
+#else
 
 #include "square_root.h"
 
-#ifdef __cplusplus
-}
 #endif

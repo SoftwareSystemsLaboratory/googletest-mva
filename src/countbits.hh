@@ -4,11 +4,13 @@
 #include <math.h>
 
 #ifdef __cplusplus
+
 extern "C" {
-#endif
+#include "countbits.h"
+}
+
+#else
 
 #include "countbits.h"
 
-#ifdef __cplusplus
-}
 #endif
