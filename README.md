@@ -14,7 +14,7 @@ This example is inspired by https://www.ibm.com/developerworks/aix/library/au-go
 - Demonstration of how to run the code in a simple Docker (see src/Dockerfile).
 - Demonstration of continuous integration using Travis, which shows how to run the unit tests.
 
-# Build Status (on Travis)
+# Build Status
 
 [![GoogleTest MVA](https://github.com/SoftwareSystemsLaboratory/googletest-mva/actions/workflows/cmake.yml/badge.svg)](https://github.com/SoftwareSystemsLaboratory/googletest-mva/actions/workflows/cmake.yml)
 
