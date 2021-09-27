@@ -16,12 +16,13 @@ This example is inspired by https://www.ibm.com/developerworks/aix/library/au-go
 
 # Build Status (on Travis)
 
-[![Build Status](https://travis-ci.org/gkthiruvathukal/googletest-mva.svg?branch=master)](https://travis-ci.org/gkthiruvathukal/googletest-mva)
+[![GoogleTest MVA](https://github.com/SoftwareSystemsLaboratory/googletest-mva/actions/workflows/cmake.yml/badge.svg)](https://github.com/SoftwareSystemsLaboratory/googletest-mva/actions/workflows/cmake.yml)
 
 # Prerequisites
 
 The main prerequisite is to set up GoogleTest.
-I've only tested on Linux and OS X via HomeBrew.
+We only test on Ubuntu and OS X, which is more than sufficient.
+Windows users should use Windows Subsystem for Linux.
 
 ## Linux instructions
 
