@@ -20,60 +20,21 @@ This example is inspired by https://www.ibm.com/developerworks/aix/library/au-go
 
 # Prerequisites
 
-The main prerequisite is to set up GoogleTest.
-We only test on Ubuntu and OS X, which is more than sufficient.
-Windows users should use Windows Subsystem for Linux.
+- C/C++ 11 Support
+- CMake
 
-## Linux instructions
-
-```
-sudo apt install build-essential cmake
-git clone https://github.com/google/googletest
-cd googletest
-mkdir build
-cd build
-cmake ..
-make
-sudo make install
+# Building
 
 ```
-
-## OS X / Homebrew Instructions
-
-```
-brew install cmake
-git clone https://github.com/google/googletest
-cd googletest
-mkdir build
-cd build
-cmake ..
-make
-make install
-```
-
-# Running the minimum viable application...
-
-```
-cd src
-mkdir build
-cd build
-cmake ..
-make
-
-```
-
-Running the app from the build directory:
-
-```
-./bin/square_root_app
-sqrt(2) = 1.41421
-
+cd googletest-mva
+cmake -S . -B build
+cmake --build build
 ```
 
 Running the tests from the build directory:
 
 ```
-./bin/square_root_tests
+./build/bin/square_root_tests
 
 [==========] Running 2 tests from 1 test case.
 [----------] Global test environment set-up.
