@@ -1,2 +1,0 @@
-add_subdirectory(square_root)
-add_subdirectory(count_bits)
