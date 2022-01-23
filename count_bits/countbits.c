@@ -16,4 +16,5 @@ int count_bits(unsigned long n)
         number_set += (number & 0x1);
         number >>= 1;
     }
+    return number_set;
 }
